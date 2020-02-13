@@ -7,6 +7,8 @@ services:
       - postgres:/var/lib/postgresql/data
 
   app:
+    tty: true
+    stdin_open: true
     depends_on:
       - "postgres"
     build: .
