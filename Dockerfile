@@ -3,7 +3,9 @@ FROM ruby:2.5.3
 # Instala nossas dependencias
 RUN apt-get update && apt-get install -qq -y --no-install-recommends \
 nodejs yarn build-essential libpq-dev imagemagick git-all nano
-
+# https://github.com/nodesource/distributions#installation-instructions
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
+        && apt-get install -y nodejs
 # Seta nosso path
 ENV INSTALL_PATH /orulo
 
