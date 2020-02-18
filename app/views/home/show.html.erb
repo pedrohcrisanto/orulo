@@ -1,0 +1,42 @@
+<br>
+<div class="container">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <h2 class="text-center">Detalhes<h2>
+  </li>
+    <li class="list-group-item text-center">
+        <img  src="<%= @data["default_image"]["520x280"] %>" alt="Imagem de capa do card">
+  </li>
+  <li class="list-group-item ">
+   <h5>
+    <strong>Nome:</strong>
+
+  <%=  @data["name"] %>
+  </h5>
+  </li>
+  <li class="list-group-item">
+    <h5>
+    <strong>Descrição:</strong>
+
+  <%=  @data["description"] %>
+  </h5>
+  </li>
+  <li class="list-group-item">
+    <h5>
+    <strong>Preço m2:</strong>
+  R$<%=  @data["price_per_private_square_meter"] %>
+  <h5>
+  </li>
+    <li class="list-group-item">
+    <h5>
+    <strong>Compartilhar:</strong>
+    <br>
+        <%= social_share_button_tag(@data["name"], :url => @data["orulo_url"]) %>
+  <h5>
+  </li>
+</ul>
+<br>
+
+<%= link_to 'Voltar', home_index_path %>
+
+</div>
