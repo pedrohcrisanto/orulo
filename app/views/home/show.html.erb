@@ -11,14 +11,14 @@
    <h5>
     <strong>Nome:</strong>
 
-  <%=  @data["name"] %>
+  <%=  @data.name %>
   </h5>
   </li>
   <li class="list-group-item">
     <h5>
     <strong>Descrição:</strong>
 
-  <%=  @data["description"] %>
+  <%=  @data.description %>
   </h5>
   </li>
   <li class="list-group-item">
@@ -31,7 +31,7 @@
     <h5>
     <strong>Compartilhar:</strong>
     <br>
-        <%= social_share_button_tag(@data["name"], :url => @data["orulo_url"]) %>
+        <%= social_share_button_tag(@data.name, :url => @data.orulo_url) %>
   <h5>
   </li>
 </ul>
