@@ -1,99 +1,17 @@
-
 <div class="container container-home">
     <div class="row">
         <div class="col-6 col-sm-3 card-home">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="<%= @buildings["buildings"][0]["default_image"]["520x280"] %>" alt="Imagem de capa do card">
+            <div class="card h-100" style="width: 18rem;">
+                <img class="card-img-top" src="<%= @data["default_image"]["200x140"] %>" alt="Imagem de capa do card">
                 <div class="card-body">
-                    <h5 class="card-title"> <%= @buildings["buildings"][0]["name"] %></h5>
-                    <p class="card-text"> <%= @buildings["buildings"][0]["description"][0..200].gsub(/\s\w+\s*$/, '...')%></p>
+                    <h5 class="card-title"> <%= @data["name"] %></h5>
+                    <p class="card-text"> <%= @data["address"]["city"]%></p>
                     <a href="#" class="btn btn-primary">Mais Informações</a>
                 </div>
             </div>
         </div>
-        <div class="col-6 col-sm-3 card-home">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="<%= @buildings["buildings"][0]["default_image"]["520x280"] %>" alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title"> <%= @buildings["buildings"][0]["name"] %></h5>
-                    <p class="card-text"> <%= @buildings["buildings"][0]["description"][0..200].gsub(/\s\w+\s*$/, '...')%></p>
-                    <a href="#" class="btn btn-primary">Mais Informações</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-3 card-home">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="<%= @buildings["buildings"][0]["default_image"]["520x280"] %>" alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title"> <%= @buildings["buildings"][0]["name"] %></h5>
-                    <p class="card-text"> <%= @buildings["buildings"][0]["description"][0..200].gsub(/\s\w+\s*$/, '...')%></p>
-                    <a href="#" class="btn btn-primary">Mais Informações</a>
-                </div>
-            </div>
-        </div>
-        <div class="w-100"></div>
-        <div class="col-6 col-sm-3 card-home">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="<%= @buildings["buildings"][0]["default_image"]["520x280"] %>" alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title"> <%= @buildings["buildings"][0]["name"] %></h5>
-                    <p class="card-text"> <%= @buildings["buildings"][0]["description"][0..200].gsub(/\s\w+\s*$/, '...')%></p>
-                    <a href="#" class="btn btn-primary">Mais Informações</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-3 card-home">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="<%= @buildings["buildings"][0]["default_image"]["520x280"] %>" alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title"> <%= @buildings["buildings"][0]["name"] %></h5>
-                    <p class="card-text"> <%= @buildings["buildings"][0]["description"][0..200].gsub(/\s\w+\s*$/, '...')%></p>
-                    <a href="#" class="btn btn-primary">Mais Informações</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-3 card-home">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="<%= @buildings["buildings"][0]["default_image"]["520x280"] %>" alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title"> <%= @buildings["buildings"][0]["name"] %></h5>
-                    <p class="card-text"> <%= @buildings["buildings"][0]["description"][0..200].gsub(/\s\w+\s*$/, '...')%></p>
-                    <a href="#" class="btn btn-primary">Mais Informações</a>
-                </div>
-            </div>
-        </div>
-        <div class="w-100"></div>
-                <div class="col-6 col-sm-3 card-home">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="<%= @buildings["buildings"][0]["default_image"]["520x280"] %>" alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title"> <%= @buildings["buildings"][0]["name"] %></h5>
-                    <p class="card-text"> <%= @buildings["buildings"][0]["description"][0..200].gsub(/\s\w+\s*$/, '...')%></p>
-                    <a href="#" class="btn btn-primary">Mais Informações</a>
-                </div>
-            </div>
-        </div>
-                <div class="col-6 col-sm-3 card-home">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="<%= @buildings["buildings"][0]["default_image"]["520x280"] %>" alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title"> <%= @buildings["buildings"][0]["name"] %></h5>
-                    <p class="card-text"> <%= @buildings["buildings"][0]["description"][0..200].gsub(/\s\w+\s*$/, '...')%></p>
-                    <a href="#" class="btn btn-primary">Mais Informações</a>
-                </div>
-            </div>
-        </div>
-                <div class="col-6 col-sm-3 card-home">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="<%= @buildings["buildings"][0]["default_image"]["520x280"] %>" alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title"> <%= @buildings["buildings"][0]["name"] %></h5>
-                    <p class="card-text"> <%= @buildings["buildings"][0]["description"][0..200].gsub(/\s\w+\s*$/, '...')%></p>
-                    <a href="#" class="btn btn-primary">Mais Informações</a>
-                </div>
-            </div>
-        </div>
-    </div>
+        
 </div>
 
+ 
 

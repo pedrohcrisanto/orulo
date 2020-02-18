@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @buildings = OruloService.new.render
+    @data = OruloService.new.find
   end
 end
