@@ -1,24 +1,29 @@
-# README
+# Orulo Test - Implementação
+## Configuração
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Clone o projeto
 
-Things you may want to cover:
+```sh
+$ git clone https://github.com/pedrohcrisanto/orulo.git
+```
 
-* Ruby version
+Instale as dependências
+```sh
+$ cd /fractaltest/
+$ sudo docker-compose run --rm app bundle install
+```
 
-* System dependencies
+Crie o banco, migre as tabelas
+```sh
+$ sudo docker-compose run --rm app bundle exec rails db:create db:migrate 
+```
 
-* Configuration
+Rode a aplicação em um terminal
+```sh
+$ sudo docker-compose up
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Para rodar os Testes
+```sh
+$ sudo docker-compose run --rm app bundle exec rspec
+```
