@@ -9,7 +9,7 @@ $ git clone https://github.com/pedrohcrisanto/orulo.git
 
 Instale as dependências
 ```sh
-$ cd /fractaltest/
+$ cd /orulo/
 $ sudo docker-compose run --rm app bundle install
 ```
 
